@@ -1,11 +1,12 @@
 # simple-python-calculator
+
 def calculator():
-    print("Simple Calculator (CLC)")
+    print("🔢 Simple Calculator 🔢")
     print("Operations: +, -, *, /, ** (power), % (modulus)")
-    
+
     try:
         num1 = float(input("Enter first number: "))
-        operator = input("Enter operator: ")
+        operator = input("Enter operator (+, -, *, /, **, %): ")
         num2 = float(input("Enter second number: "))
 
         if operator == "+":
@@ -21,10 +22,10 @@ def calculator():
         elif operator == "%":
             result = num1 % num2
         else:
-            result = "Invalid operator"
+            result = "❌ Invalid operator ❌"
 
-        print("Result:", result)
+        print("🧮 Result:", result)
     except ValueError:
-        print("Invalid input! Please enter numbers.")
+        print("⚠️ Error: Invalid input! Please enter numbers.")
 
 calculator()
