@@ -1,5 +1,4 @@
 # simple-python-calculator
-
 def calculator():
     print("Simple Calculator (CLC)")
     print("Operations: +, -, *, /, ** (power), % (modulus)")
