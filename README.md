@@ -1,34 +1,25 @@
-# simple-python-calculator
-
 def calculator():
-    operator = input("choose operator (+, -, *, /): ")
-    num1 = float(input("choose first number: -"))
-    num2 = float(input("choose second number : -"))
-
+    operator = input("Choose operator (+, -, *, /): ")
+    num1 = float(input("Enter first number: "))
+    num2 = float(input("Enter second number: "))
 
     if operator == '+':
-      result = num1 + num2
-
-    elif  operator == '-':
-      result = num1 - num2
-
-    elif  operator == '*':
-      result = num1 * num2 
-
+        result = num1 + num2
+    elif operator == '-':
+        result = num1 - num2
+    elif operator == '*':
+        result = num1 * num2
     elif operator == '/':
-      result = num1 / num2  
-   
+        if num2 == 0:
+            print("Error: Cannot divide by zero!")
+            return
+        result = num1 / num2
     else:
-     print("cant dived by zero")
-  
+        print("Invalid operator!")
+        return
+
+    print("Result:", result)
 
 
-
-    print("Result", result)
-
-
-
-
-calculator()    
-
+calculator()
  
