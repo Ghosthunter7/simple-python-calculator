@@ -1,25 +1,20 @@
-def calculator():
-    operator = input("Choose operator (+, -, *, /): ")
-    num1 = float(input("Enter first number: "))
-    num2 = float(input("Enter second number: "))
+# Simple Python Calculator
 
-    if operator == '+':
-        result = num1 + num2
-    elif operator == '-':
-        result = num1 - num2
-    elif operator == '*':
-        result = num1 * num2
-    elif operator == '/':
-        if num2 == 0:
-            print("Error: Cannot divide by zero!")
-            return
-        result = num1 / num2
-    else:
-        print("Invalid operator!")
-        return
+This is a simple Python calculator project that can perform basic arithmetic operations like addition, subtraction, multiplication, and division.
 
-    print("Result:", result)
+## Features
+- Add, Subtract, Multiply, Divide two numbers
+- Simple and easy-to-use console interface
+- Perfect for Python beginners
 
+## How to Use
+1. Clone or download the repository.
+2. Run the Python file calc_practice.py.
+3. Follow the prompts to select an operator and enter two numbers.
+4. View the result instantly in the console.
 
-calculator()
- 
+## Author
+Rushi Kanase
+
+## License
+This project is open source.
